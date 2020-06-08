@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:securityTest id="d772a36f-d5a5-4ff5-93c8-2c8d5fa397a8" testCaseId="5baa21e2-5f6f-410d-906e-91688acc2503" name="SecurityTest 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d772a36f-d5a5-4ff5-93c8-2c8d5fa397a8fileName">SecurityTest-1</con:setting>
+  </con:settings>
+  <con:testStepSecurityTest>
+    <con:testStepId>f883e32c-81ca-44b0-859a-96db6eeb74c2</con:testStepId>
+    <con:testStepSecurityScan type="BoundaryScan" name="Boundary Scan" id="e68b7819-bc9d-4918-994f-e619e82b0ed9" applyForFailedStep="false" disabled="false" runOnlyOnce="true">
+      <con:settings/>
+      <con:config xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:assertion type="Sensitive Information Exposure" id="642a19c7-4642-496a-b990-5860d1990e16" name="Sensitive Information Exposure">
+        <con:configuration/>
+      </con:assertion>
+      <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:executionStrategy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:strategy>ONE_BY_ONE</con:strategy>
+        <con:delay>100</con:delay>
+      </con:executionStrategy>
+    </con:testStepSecurityScan>
+  </con:testStepSecurityTest>
+  <con:properties/>
+  <con:reportParameters/>
+</con:securityTest>

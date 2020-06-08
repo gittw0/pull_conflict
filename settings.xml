@@ -39,6 +39,13 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
+  <con:environment id="fe87bbd7-60b6-45d5-a16b-55c102428ebf" name="New Environment" index="0">
+    <con:service type="REST" name="http://example.com">
+      <con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">http://example.com</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
   <con:authRepository/>
   <con:tags/>
 </con:soapui-project>
